@@ -1,0 +1,12 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4454
+
+Try :call vimlparser#test('foo.vim').  It parse the file and shows the result of test compiler.
+
+foo.vim:
+if x == y
+  echo z
+endif
+
+result:
+(if (== x y)
+  (echo z))
